@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página Web</title>
+</head>
+<body>
+    <!-- Início header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./links.html">Links</a></li>
+                <li><a href="./texto.html">Texto</a></li>
+                <li><a href="./listas.html">Listas</a></li>
+                <li><a href="./formularios.html">Formulários</a></li>
+                <li><a href="./imagens.html">Imagens</a></li>
+                <li><a href="./tabela.html">Tabelas</a></li>
+                <li><a href="#">Multimídia</a></li>
+                <li><a href="#">Tags Interativas</a></li>
+            </ul>
+        </nav>
+        <h1>Formulário</h1>
+    </header>
+    <!--Fim header -->
+
+<!--Início main-->
+<main>
+    <form action="#">
+        <h2>Formulário de Cadastro</h2>
+        <p>Preencha os campos abaixo:</p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <br>
+            <label for="nome">Nome: </label>
+            <input id="nome" type="text" placeholder="Digite seu nome">
+            <br><br>
+            <label for="CPF">CPF: </label>
+            <input id="CPF" type="number" placeholder="000.000.000-00">
+            <br><br>
+            <label for="dn">Data de Nascimento: </label>
+            <input id="dn" type="date" placeholder="00/00/0000">
+            <br><br>
+            <label for="Naturalidade">Cidade: </label>    
+            <input id="cidade" type="text" placeholder="Digite sua cidade">
+            <br><br>
+            <label for="genero">Gênero: </label>
+            <select id="genero" type="genero"> >
+                <option value="" disabled selected>Escolha</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outro">Outro</option>    
+                <option value="nao-binario">Não binário</option>
+                <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+            </select>
+        </fieldset>
+         <fieldset>
+            <legend>Contato</legend>
+            <br>
+            <label for="telefone">Telefone: </label>
+            <input id="telefone" type="number" placeholder="(00) 00000-0000">
+            <br><br>
+            <label for="email">E-mail: </label>
+            <input id="email" type="email" placeholder=" email@gmail.com">
+            <br><br>
+        </fieldset>
+        <button>Limpar</button>
+        <button>Enviar</button>
+    </form>
+        
+</main>
+<!--Fim main-->
+
+<!-- Início footer-->
+<footer>
+    <h3>&copy; Independência ou morte! 2025.</h3>
+</footer>
+<!-- Fim footer -->
+    
+</body>
+</html>
