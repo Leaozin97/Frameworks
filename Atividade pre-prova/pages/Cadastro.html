@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canários Brasileiros</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./Alimentação.html">Alimentação</a></li>
+                <li><a href="./Cuidados.html">Cuidados</a></li>
+                <li><a href="./Curiosidades.html">Curiosidades</a></li>
+                <li><a href="./Cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <form action="#" method="post">
+                <h2>Formulário de Cadastro</h2>
+                <p>Preencha os campos abaixo:</p>
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <br>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" name="nome" required>
+                    <br><br>
+                    <label for="CPF">CPF: </label>
+                    <input type="text" id="CPF" placeholder="Digite seu CPF" name="CPF" required>
+                    <br><br>
+                    <label for="dn">Data de Nascimento: </label> 
+                    <input type="date" id="dn" placeholder="DD/MM/AAAA" name="dn" required>
+                    <br><br>
+                    <label for="Naturalidade">Cidade: </label>
+                    <input type="text" id="cidade" placeholder="Digite sua cidade" name="Naturalidade" required>
+                    <br><br>
+                    <label for="Genero">Gênero: </label>
+                        <select id="Genero" name="Genero" required>
+                            <option value="">Selecione</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Nao-Binario">Não Binário</option>
+                            <option value="Prefiro-Nao-Dizer">Prefiro não dizer</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Informações de Acesso</legend>
+                    <br>
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" placeholder="@usuario" name="usuario" required>
+                    <br><br>
+                    <label for="telefone">Telefone: </label>
+                    <input type="text" id="telefone" placeholder="(XX) XXXXX-XXXX" name="telefone" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="email@gmail.com" name="email" required>
+                    <br><br>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="S&nh@123" name="senha" required>
+                    <br>
+                    <p>Ao clicar em "Enviar", você concorda com nossos <a href="#">Termos de Serviço</a> e <a href="#">Política de Privacidade</a>.</p>
+                </fieldset>
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+
+               
+                        
+            </form>
+    </main>
+
+
+    <hr>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contato:</h3>
+                <p>E-mail:exemplo@email.com</p>
+                <p>Telefone:(92)00000-0000</p>
+            </div>
+            <div class="footer-section">
+                <h3>&copy; Todos os direitos reservados. Canários Brasileiros  2025.</h3>
+            </div> 
+        </div>
+    </footer>
+   
+</body>
+</html>
