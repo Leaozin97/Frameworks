@@ -1,0 +1,121 @@
+:root {
+    --primary-gold: #e9b117;
+    --secondary-blue: #000000;
+    --dark-blue: #0d0e0f; 
+    --background-light: #f7f8da;
+    --text-dark: #333;
+    --text-light: #666;
+}
+.container_home {
+    padding-top: 6px;
+    padding-bottom: 100px;
+    background-color: var(--background-light);
+    min-height: 100px; 
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background-color: #ecddb3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    border-bottom: 5px solid var(--primary-gold); 
+}
+
+.titulo-principal {
+    font-size: 3.5em;
+    font-weight: 800;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    line-height: 1.1; 
+}
+
+.paragrafo1 {
+    font-size: 1.5em;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.corpo_home {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #ecddb3;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.subtitulo, .subtitulo1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--secondary-blue);
+    border-bottom: 3px solid var(--primary-gold); 
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.subtitulo1 {
+    font-size: 1.8em;
+}
+
+.paragrafo2 {
+    font-size: 1.1em;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify; 
+}
+
+.h3-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+}
+
+.h3-list li {
+    background-color: white;
+    color: var(--text-dark);
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    border-left: 5px solid #e9b117; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+@media (max-width: 768px) {
+    .titulo-principal {
+        font-size: 2.5em;
+    }
+    
+    .paragrafo1 {
+        font-size: 1.3em;
+    }
+    
+    .h3-list {
+        grid-template-columns: 1fr; 
+    }
+    
+    .corpo_home {
+        padding: 20px;
+        margin: 0 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-principal {
+        font-size: 1.8em;
+    }
+    
+    .paragrafo1 {
+        font-size: 1.1em;
+    }
+    
+    .cabecalho {
+        padding: 40px 15px 20px;
+    }
+}

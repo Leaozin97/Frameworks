@@ -1,0 +1,110 @@
+.barra {
+    background-color: #e9b117;
+    color: rgb(8, 7, 7);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 15px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.burguer {
+    display: flex; 
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link li {
+    margin-left: 20px;
+}
+
+.nav-link li a {
+    color: rgb(15, 14, 14);
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-link li a:hover {
+    background-color: #998a06; 
+}
+.rodape{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(158, 152, 152);
+    color: #0d0d0e;
+    border-top: 2px solid #ddc80e;
+    padding-block: 0.75rem;
+    margin-top: auto;
+}
+.rodape p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .barra {
+        flex-wrap: wrap; 
+        align-items: center;
+    }
+    
+    .burguer {
+        display: block;
+        cursor: pointer;
+        font-size: 1em;
+        line-height: 1;
+        z-index: 1000;
+    }
+
+    .nav-link {
+        
+        flex-direction: column;
+        width: 100%;
+        height: 0;
+        overflow:scroll;
+        text-align: center;
+        background-color: #ddc80e;         
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        transition: height 0.3s ease-in-out;
+        box-shadow: 0 4px 6px #ddc80e;
+    }
+
+    .nav-link.active {
+        height: 180px; 
+    }
+
+    .nav-link li {
+        margin: 0;
+        border-top: 1px solid #ddc80e;
+    }
+    
+    .nav-link li a {
+        padding: 15px;
+    }
+
+    .nav-link li a:hover {
+        background-color: #998a06;
+    }
+}

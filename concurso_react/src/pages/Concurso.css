@@ -1,0 +1,114 @@
+:root {
+    --primary-blue: #f1e31d;
+    --dark-blue: #060607;
+    --light-gray: #f7f8da;
+    --text-color: #000000;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    padding: 40px 400px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--light-gray);
+}
+
+.cabecalho {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.cabecalho h1 {
+    font-size: 2.5em;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.cabecalho p {
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+.container-card > div:not(.cabecalho) {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(17, 6, 6, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 3px solid #e9b117;
+}
+
+.container-card > div:not(.cabecalho):hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgb(172, 149, 23);
+}
+
+.curso_imagem {
+    width: 64px; 
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.curso_nome {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+    min-height: 50px; 
+}
+
+.curso_descricao {
+    color: #080808;
+    font-size: 0.95em;
+    line-height: 1.4;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.curso_botao {
+    background-color: #e9b117;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.curso_botao:hover {
+    background-color:#aa8824;
+    transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+    .container-card {
+        padding: 30px 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .container-card {
+        grid-template-columns: 1fr;
+        padding: 20px 15px;
+    }
+    
+    .cabecalho h1 {
+        font-size: 2em;
+    }
+    
+    .cabecalho p {
+        font-size: 1em;
+    }
+}

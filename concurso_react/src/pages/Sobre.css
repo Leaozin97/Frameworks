@@ -1,0 +1,111 @@
+:root {
+    --primary-gold: #f7a800;
+    --secondary-blue: #070707;
+    --dark-blue: #060707;
+    --background-light: #f7f8da;
+    --text-dark: #333;
+    --text-light: #666;
+}
+
+section {
+    padding: 10px 0 5px;
+    background-color: var(--background-light);
+    min-height: 10px; /* Garante altura mínima */
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 40px 20px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    border-bottom: 5px solid var(--primary-gold);
+}
+
+.cabecalho .titulo1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.cabecalho p {
+    font-size: 1.1em;
+    color: rgb(10, 10, 10);
+}
+
+.corpo_sobre {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ecddb3;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.sobre_imagem {
+    width: 300px;
+    height: 350px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin: 20px auto;
+    border: 3px solid var(--primary-gold);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: block; 
+}
+.corpo_sobre .subtitulo {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: rgb(7, 7, 7);
+    margin-bottom: 5px;
+}
+
+.corpo_sobre .descricao1 {
+    font-size: 1.2em;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeb413; 
+}
+
+.corpo_sobre .descricao2 {
+    font-size: 1.1em;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.corpo_sobre p {
+    font-size: 1em;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.corpo_sobre strong {
+    color: var(--secondary-blue);
+    font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+    .cabecalho .titulo1 {
+        font-size: 2em;
+    }
+
+    .corpo_sobre {
+        padding: 30px 20px;
+        margin: 0 15px;
+    }
+
+    .corpo_sobre .subtitulo {
+        font-size: 1.8em;
+    }
+
+    .corpo_sobre .descricao1 {
+        font-size: 1.1em;
+    }
+}
